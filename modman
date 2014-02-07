@@ -1,0 +1,6 @@
+app/code/local/MobWeb/AddGridFields app/code/local/MobWeb/AddGridFields/
+
+app/etc/modules/MobWeb_AddGridFields.xml app/etc/modules/MobWeb_AddGridFields.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"
