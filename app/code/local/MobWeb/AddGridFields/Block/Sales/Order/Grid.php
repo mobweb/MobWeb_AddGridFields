@@ -60,6 +60,15 @@ class MobWeb_AddGridFields_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_S
             'billing_name'
         );
 
+        $this->addColumnAfter('customer_id',
+            array(
+                'header'        => Mage::helper('sales')->__('Customer ID'),
+                'index'         => 'customer_id',
+                'filter_index'  => 'main_table.customer_id'
+            ),
+            'created_at'
+        );
+
         $this->addColumnAfter('shipping_country_id',
             array(
                 'header'        => Mage::helper('sales')->__('Ship to Country'),
